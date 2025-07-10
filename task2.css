@@ -1,0 +1,141 @@
+/* ===== RESET & GLOBAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: linear-gradient(135deg, #2b5876, #4e4376);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* ===== NAVIGATION ===== */
+.navbar {
+  background-color: #4e4376;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 1rem;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: background 0.3s ease;
+}
+.navbar a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ===== SECTIONS ===== */
+section {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 40px 20px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+section h2 {
+  text-align: center;
+  color: #4e4376;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* ===== FEATURES / SERVICES ===== */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+.feature-box {
+  background: #f0f4ff;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.feature-box:hover {
+  transform: translateY(-10px);
+  background: #e0e8ff;
+}
+.feature-box h3 {
+  color: #2b5876;
+  margin-bottom: 10px;
+}
+
+/* ===== PORTFOLIO IMAGE STYLING ===== */
+.feature-box img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* ===== CONTACT FORM ===== */
+form {
+  text-align: center;
+}
+form input,
+form textarea {
+  width: 90%;
+  max-width: 500px;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+form button {
+  background-color: #4e4376;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+form button:hover {
+  background-color: #2b5876;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #4e4376;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
